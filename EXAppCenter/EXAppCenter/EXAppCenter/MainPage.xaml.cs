@@ -16,7 +16,14 @@ namespace EXAppCenter
 
         private void CrashBtn_Clicked(object sender, EventArgs e)
         {
-            throw new Exception();
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

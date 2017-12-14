@@ -18,7 +18,7 @@ namespace EXAppCenter
         {
             try
             {
-
+                throw new Exception();
             }
             catch (Exception ex)
             {

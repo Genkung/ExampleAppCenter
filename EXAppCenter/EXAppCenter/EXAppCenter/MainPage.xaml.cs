@@ -18,7 +18,8 @@ namespace EXAppCenter
         {
             try
             {
-                throw new Exception();
+                var a = 0;
+                var b = 2 / a;
             }
             catch (Exception ex)
             {

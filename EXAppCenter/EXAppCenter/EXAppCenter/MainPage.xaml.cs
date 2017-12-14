@@ -13,5 +13,10 @@ namespace EXAppCenter
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void CrashBtn_Clicked(object sender, EventArgs e)
+        {
+            throw new Exception();
+        }
+    }
 }

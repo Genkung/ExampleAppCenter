@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 using Xamarin.Forms;
 
@@ -18,8 +21,10 @@ namespace EXAppCenter
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            AppCenter.Start("android=9d0235e4-bb0e-4d71-acba-cc4887eca2a7;" ,
+                   typeof(Analytics), typeof(Crashes));
+            // Handle when your app starts
+        }
 
 		protected override void OnSleep ()
 		{
